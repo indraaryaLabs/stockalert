@@ -10,17 +10,17 @@ StockAlert bagian dari portofolio **SatuArah Labs**. Berjalan sepenuhnya di brow
 
 ```bash
 npm install
-npm run dev     # http://localhost:5173
+npm run dev # http://localhost:5173
 ```
 
 Perintah lain:
 
 ```bash
-npm run build      # build produksi ke dist/
-npm run preview    # hasil build dilayani lokal
-npm run typecheck  # tsc -b
-npm run lint       # ESLint
-npm test           # 110 unit test (Vitest)
+npm run build # build produksi ke dist/
+npm run preview # hasil build dilayani lokal
+npm run typecheck # tsc -b
+npm run lint # ESLint
+npm test # 110 unit test (Vitest)
 npm run test:watch # mode interaktif
 ```
 
@@ -110,30 +110,30 @@ Barang baru dengan kuantitas awal `> 0` otomatis membuat satu pergerakan masuk b
 
 ```
 src/
-├── domain/          # tanpa React, tanpa DOM, tanpa jam
-│   ├── types.ts     # model, satuan, versi skema
-│   ├── aturan.ts    # seluruh perhitungan & validasi (fungsi murni)
-│   ├── mesin.ts     # peristiwa, reducer, undo/redo
-│   └── __tests__/   # 91 unit test
-├── platform/        # hal yang butuh browser
-│   ├── GudangProvider.tsx  # state + riwayat + penyimpanan otomatis
-│   ├── penyimpanan.ts      # localStorage, migrasi skema, toleransi file rusak
-│   ├── seed.ts             # data demo 19 barang + 165 pergerakan
-│   ├── ekspor.ts           # CSV & JSON
-│   ├── format.ts           # id-ID: rupiah, angka, tanggal
-│   ├── PaletPerintah.tsx   # palet Ctrl+K
-│   └── pintasan.ts         # pintasan keyboard global
-├── ui/              # primitif, kerangka, grafik
-│   ├── primitif.tsx # Lencana, Medan, Modal, Konfirmasi, Kosong, Cari
-│   ├── Rangka.tsx   # sidebar, topbar, drawer
-│   └── grafik.tsx   # SVG: sparkline batang, area, cincin, progres
-├── features/        # halaman
-│   ├── Dasbor, DaftarBarang, RiwayatPergerakan, DataCadangan
-│   ├── FormBarang, FormPergerakan
-│   └── tren.ts      # tren 12 minggu (terpisah agar mudah diuji)
+├── domain/ # tanpa React, tanpa DOM, tanpa jam
+│ ├── types.ts # model, satuan, versi skema
+│ ├── aturan.ts # seluruh perhitungan & validasi (fungsi murni)
+│ ├── mesin.ts # peristiwa, reducer, undo/redo
+│ └── __tests__/ # 91 unit test
+├── platform/ # hal yang butuh browser
+│ ├── GudangProvider.tsx # state + riwayat + penyimpanan otomatis
+│ ├── penyimpanan.ts # localStorage, migrasi skema, toleransi file rusak
+│ ├── seed.ts # data demo 19 barang + 165 pergerakan
+│ ├── ekspor.ts # CSV & JSON
+│ ├── format.ts # id-ID: rupiah, angka, tanggal
+│ ├── PaletPerintah.tsx # palet Ctrl+K
+│ └── pintasan.ts # pintasan keyboard global
+├── ui/ # primitif, kerangka, grafik
+│ ├── primitif.tsx # Lencana, Medan, Modal, Konfirmasi, Kosong, Cari
+│ ├── Rangka.tsx # sidebar, topbar, drawer
+│ └── grafik.tsx # SVG: sparkline batang, area, cincin, progres
+├── features/ # halaman
+│ ├── Dasbor, DaftarBarang, RiwayatPergerakan, DataCadangan
+│ ├── FormBarang, FormPergerakan
+│ └── tren.ts # tren 12 minggu (terpisah agar mudah diuji)
 └── styles/
-    ├── dasar.css     # token, reset, tipografi
-    └── komponen.css # seluruh komponen
+ ├── dasar.css # token, reset, tipografi
+ └── komponen.css # seluruh komponen
 ```
 
 **Pemisahan tanggung jawab**
@@ -179,8 +179,8 @@ Playwright/Chromium terhadap server dev. Cakupannya:
 Menjalankan:
 
 ```bash
-npm run dev            # terminal 1
-python ui_check.py     # terminal 2 (butuh pip install playwright && playwright install chromium)
+npm run dev # terminal 1
+python ui_check.py # terminal 2 (butuh pip install playwright && playwright install chromium)
 ```
 
 ---
